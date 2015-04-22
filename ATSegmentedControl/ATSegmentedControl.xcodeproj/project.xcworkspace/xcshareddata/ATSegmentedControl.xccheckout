@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6C95077B-5F9D-45F9-8CA1-EEC98DB871CE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ATSegmentedControl</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AC88519553DD8AC29E50782596E7763DF6EEB391</key>
+		<string>https://github.com/ajin/ATSegmentedControl.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ATSegmentedControl/ATSegmentedControl.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AC88519553DD8AC29E50782596E7763DF6EEB391</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ajin/ATSegmentedControl.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AC88519553DD8AC29E50782596E7763DF6EEB391</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AC88519553DD8AC29E50782596E7763DF6EEB391</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ATSegmentedControl</string>
+		</dict>
+	</array>
+</dict>
+</plist>

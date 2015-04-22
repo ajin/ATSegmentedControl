@@ -15,7 +15,7 @@
 - (id)initWithFrame:(NSRect)frameRect {
     self = [super initWithFrame:frameRect];
     if (self) {
-
+        [self initialize];
     }
     return self;
 }
@@ -29,21 +29,23 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if(self != nil) {
-        self.items = [[NSMutableArray alloc] init];
-        self.itemWidth = 32.0f;
-        
-        self.overflowButton = [[NSButton alloc] initWithFrame:NSZeroRect];
-        [self.overflowButton setCell:[[ATSegmentedButtonCell alloc] init]];
-        NSImage* icon = [NSImage imageNamed:@"NSRightFacingTriangleTemplate"];
-        [self.overflowButton setImage:icon];
-        [self.overflowButton setTarget:self];
-        [self.overflowButton setAction:@selector(overflowContexMenu:)];
-        NSMenu *theMenu = [[NSMenu alloc] initWithTitle:@"Contextual Menu"];
-        [self.overflowButton setMenu:theMenu];
-        
-        
+        [self initialize];
     }
     return self;
+}
+
+- (void) initialize {
+    self.items = [[NSMutableArray alloc] init];
+    self.itemWidth = 32.0f;
+    
+    self.overflowButton = [[NSButton alloc] initWithFrame:NSZeroRect];
+    [self.overflowButton setCell:[[ATSegmentedButtonCell alloc] init]];
+    NSImage* icon = [NSImage imageNamed:@"NSRightFacingTriangleTemplate"];
+    [self.overflowButton setImage:icon];
+    [self.overflowButton setTarget:self];
+    [self.overflowButton setAction:@selector(overflowContexMenu:)];
+    NSMenu *theMenu = [[NSMenu alloc] initWithTitle:@"Contextual Menu"];
+    [self.overflowButton setMenu:theMenu];
 }
 
 - (void)awakeFromNib {
@@ -293,13 +295,9 @@
     // Drawing code here.
     // draw background color
     if (self.backgroundColor) {
-        CGContextRef context = (CGContextRef) [[NSGraphicsContext currentContext] graphicsPort];
-        CGContextSetRGBFillColor(context,
-                                 [self.backgroundColor redComponent],
-                                 [self.backgroundColor greenComponent],
-                                 [self.backgroundColor blueComponent],
-                                 [self.backgroundColor alphaComponent]);
-        CGContextFillRect(context, NSRectToCGRect(dirtyRect));
+        [super drawRect:dirtyRect];
+        [self.backgroundColor setFill];
+        NSRectFill(dirtyRect);
     }
     
     // draw bottom border
