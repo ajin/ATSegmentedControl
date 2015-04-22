@@ -2,6 +2,12 @@
 
 ATSegmentedControl is similar like segmented control from xcode but borderless and has some extra functions. 
 
+<img src=https://raw.githubusercontent.com/ajin/ATSegmentedControl/master/screenshot-1.png height=400 />
+<img src=https://raw.githubusercontent.com/ajin/ATSegmentedControl/master/screenshot-2.png height=400 />
+<img src=https://raw.githubusercontent.com/ajin/ATSegmentedControl/master/screenshot-3.png height=400 />
+
+
+
 ## Features
 
 * Automatically hide items and show them in a pop-up menu when resizing.
